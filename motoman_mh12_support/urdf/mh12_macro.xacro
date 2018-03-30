@@ -117,7 +117,7 @@
     <origin xyz="0 0 0.45"/>
     <parent link="${prefix}base_link" />
     <child link="${prefix}link_s" />
-    <axis xyz="0 0 -1" />
+    <axis xyz="0 0 1" />
     <limit  lower="-2.9671" upper="2.9671" effort="0" velocity="3.83972" />
   </joint>
 
@@ -142,7 +142,7 @@
     <origin xyz="0 0 0.2"/>
     <parent link="${prefix}link_u" />
     <child link="${prefix}link_r" />
-    <axis xyz="-1 0 0" />
+    <axis xyz="1 0 0" />
     <limit lower="-3.1416" upper="3.1416" effort="22" velocity="7.15585" />
   </joint>
   
@@ -159,7 +159,7 @@
     <origin xyz="0.1 0 0"/>
     <parent link="${prefix}link_b" />
     <child link="${prefix}link_t" />
-    <axis xyz="-1 0 0" />
+    <axis xyz="1 0 0" />
     <limit lower="-6.2832" upper="6.2832" effort="9.8" velocity="10.647" />
   </joint>
 
