@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- load the joint state controller -->
+  <rosparam file="$(find motoman_mh12_gazebo)/config/joint_state_controller.yaml"
+            command="load" />
+  <node name="joint_state_controller_spawner"
+        pkg="controller_manager" type="controller_manager"
+        args="spawn joint_state_controller" />
+
+  <!-- load the arm controller -->
+  <rosparam file="$(find motoman_mh12_gazebo)/config/mh12_arm_controller_common.yaml"
+            command="load" />
+  <rosparam file="$(find motoman_mh12_gazebo)/config/mh12_arm_controller_joints.yaml"
+            command="load" />
+  <node name="motoman_mh12_controller_spawner"
+        pkg="controller_manager" type="controller_manager"
+        args="spawn arm_controller" />  
+</launch>

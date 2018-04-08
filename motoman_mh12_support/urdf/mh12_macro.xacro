@@ -9,13 +9,20 @@
 
   <!-- Links -->
   <link name="${prefix}base_link">
+    <inertial>
+      <mass value="25.4"/>
+      <origin xyz="-0.057 0.001 0.081" rpy="0 0 0"/>
+      <inertia ixx="0.00462" iyy="0.00769" izz="0.01007" iyz="-0.00005" ixz="0" ixy="0.00003"/>
+    </inertial>
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/visual/base_link.STL" />
       </geometry>
       <material name="mh12_deep_blue"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/collision/base_link.STL" />
       </geometry>
@@ -23,13 +30,20 @@
   </link>
 
   <link name="${prefix}link_s">
+    <inertial>
+      <mass value="45.7"/>
+      <origin xyz="0.032 0.015 -0.135" rpy="0 0 0"/>
+      <inertia ixx="0.0284" iyy="0.0324" izz="0.0320" iyz="-0.0021" ixz="-0.0071" ixy="-0.0019"/>
+    </inertial>
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/visual/link_s.STL" />
       </geometry>
       <material name="mh12_deep_blue"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/collision/link_s.STL" />
       </geometry>
@@ -37,13 +51,20 @@
   </link>
   
   <link name="${prefix}link_l">
+    <inertial>
+      <mass value="18.1"/>
+      <origin xyz="-0.013 -0.107 0.288" rpy="0 0 0"/>
+      <inertia ixx="0.00970" iyy="0.00992" izz="0.00092" iyz="0.00018" ixz="0.00002" ixy="-0.00013"/>
+    </inertial>
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/visual/link_l.STL" />
       </geometry>
       <material name="mh12_deep_blue"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/collision/link_l.STL" />
       </geometry>
@@ -51,13 +72,20 @@
   </link>
 
   <link name="${prefix}link_u">
+    <inertial>
+      <mass value="24.8"/>
+      <origin xyz="0.096 -0.022 0.111" rpy="0 0 0"/>
+      <inertia ixx="0.00668" iyy="0.00696" izz="0.00601" iyz="0.00094" ixz="-0.00214" ixy="0.00055"/>
+    </inertial>
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/visual/link_u.STL" />
       </geometry>
       <material name="mh12_deep_blue"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/collision/link_u.STL" />
       </geometry>
@@ -65,13 +93,20 @@
   </link>
 
   <link name="${prefix}link_r">
+    <inertial>
+      <mass value="13.5"/>
+      <origin xyz="0.463 0.002 0.013" rpy="0 0 0"/>
+      <inertia ixx="0.000606" iyy="0.002183" izz="0.002277" iyz="-0.000013" ixz="0" ixy="0.000013"/>
+    </inertial>
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/visual/link_r.STL" />
       </geometry>
       <material name="mh12_deep_blue"/>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/collision/link_r.STL" />
       </geometry>
@@ -79,7 +114,13 @@
   </link>
 
   <link name="${prefix}link_b">
+    <inertial>
+      <mass value="2.37"/>
+      <origin xyz="0.030 -0.001 -0.001" rpy="0 0 0"/>
+      <inertia ixx="0.0000095" iyy="0.0000119" izz="0.0000119" iyz="0" ixz="0" ixy="0"/>
+    </inertial>
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/visual/link_b.STL" />
       </geometry>
@@ -87,6 +128,7 @@
       </material>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/collision/link_b.STL" />
       </geometry>
@@ -95,7 +137,13 @@
 
 
   <link name="${prefix}link_t">
+    <inertial>
+      <mass value="0.118"/>
+      <origin xyz="-0.007 -0.001 0" rpy="0 0 0"/>
+      <inertia ixx="0.0000107" iyy="0.0000055" izz="0.0000055" iyz="0" ixz="0" ixy="0"/>
+    </inertial>
     <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/visual/link_t.STL" />
       </geometry>
@@ -103,6 +151,7 @@
       </material>
     </visual>
     <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
         <mesh filename="package://motoman_mh12_support/meshes/collision/link_t.STL" />
       </geometry>
@@ -114,57 +163,61 @@
   <!-- JOINTS -->
 
   <joint name="${prefix}joint_s" type="revolute">
-    <origin xyz="0 0 0.45"/>
+    <origin xyz="0 0 0.45" rpy="0 0 0"/>
     <parent link="${prefix}base_link" />
     <child link="${prefix}link_s" />
     <axis xyz="0 0 1" />
     <limit  lower="-2.9671" upper="2.9671" effort="0" velocity="3.83972" />
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
 
   <joint name="${prefix}joint_l" type="revolute">
-    <origin xyz="0.155 0 0"/>
+    <origin xyz="0.155 0 0" rpy="0 0 0"/>
     <parent link="${prefix}link_s" />
     <child link="${prefix}link_l" />
     <axis xyz="0 -1 0" />
     <limit lower="-1.5708" upper="2.7053" effort="0" velocity="3.49066" />
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
  
   <joint name="${prefix}joint_u" type="revolute">
-    <origin
-      xyz="0 0 0.614"/>
+    <origin xyz="0 0 0.614" rpy="0 0 0"/>
     <parent link="${prefix}link_l" />
     <child link="${prefix}link_u" />
     <axis xyz="0 -1 0" />
     <limit lower="-3.0543" upper="4.1888" effort="0" velocity="3.8397" />
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   
   <joint name="${prefix}joint_r" type="revolute">
-    <origin xyz="0 0 0.2"/>
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
     <parent link="${prefix}link_u" />
     <child link="${prefix}link_r" />
     <axis xyz="1 0 0" />
     <limit lower="-3.1416" upper="3.1416" effort="22" velocity="7.15585" />
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
   
   <joint name="${prefix}joint_b" type="revolute">
-    <origin
-      xyz="0.64 0 0"/>
+    <origin xyz="0.64 0 0" rpy="0 0 0"/>
     <parent link="${prefix}link_r" />
     <child link="${prefix}link_b" />
     <axis xyz="0 -1 0" />
     <limit lower="-2.3562" upper="2.3562" effort="22" velocity="7.15585" />
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
 
   <joint name="${prefix}joint_t" type="revolute">
-    <origin xyz="0.1 0 0"/>
+    <origin xyz="0.1 0 0" rpy="0 0 0"/>
     <parent link="${prefix}link_b" />
     <child link="${prefix}link_t" />
     <axis xyz="1 0 0" />
     <limit lower="-6.2832" upper="6.2832" effort="9.8" velocity="10.647" />
+    <dynamics damping="0.0" friction="0.0"/>
   </joint>
 
   <joint name="${prefix}link_t-tool0" type="fixed">
-    <origin rpy="0 1.5708 0"/>
+    <origin xyz="0 0 0" rpy="0 1.5708 0"/>
     <parent link="${prefix}link_t"/>
     <child link="${prefix}tool0"/>
   </joint>
