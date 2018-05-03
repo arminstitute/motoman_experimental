@@ -1,5 +1,5 @@
 controller_list:
-  - name: arm_controller
-    action_ns: follow_joint_trajectory
+  - name: joint_trajectory_action
+    action_ns: /
     type: FollowJointTrajectory
     joints: [joint_s,joint_l,joint_u,joint_r,joint_b,joint_t]

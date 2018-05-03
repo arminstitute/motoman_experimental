@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <launch>
 
+  <!-- Pass use_sim:=false to run on the phyical robot -->
+
   <!-- The planning and execution components of MoveIt! configured to run -->
   <!-- using the ROS-Industrial interface. -->
  
@@ -30,8 +32,9 @@
   <!--   - this typically includes: robot_state, motion_interface, and joint_trajectory_action nodes -->
   <!--   - replace these calls with appropriate robot-specific calls or launch files -->
   <group unless="$(arg sim)">
-    <include file="$(find [robot_interface_pkg])/launch/robot_interface.launch" >
-      <arg name="robot_ip" value="$(arg robot_ip)"/>
+    <rosparam command="load" file="$(find motoman_mh12_support)/config/joint_names_mh12.yaml" />
+    <include file="$(find motoman_driver)/launch/robot_interface_streaming_$(arg controller).launch">
+      <arg name="robot_ip" value="$(arg robot_ip)" />
     </include>
   </group>
 
