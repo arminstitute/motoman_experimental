@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: motoman_hc10_support
+    relative_path: urdf/hc10.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/motoman_hc10.srdf
+  CONFIG:
+    author_name: Mark Tomaszewski
+    author_email: mstomas@clemson.edu
+    generated_timestamp: 1548973846
